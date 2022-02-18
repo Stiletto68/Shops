@@ -26,7 +26,7 @@ class OrganizationsAsJSON(XLSXFileMixin, viewsets.ModelViewSet):
     """
     queryset = Organization.objects.all()
     serializer_class = OrganizationJSONSerializer
-    renderer_classes = (BrowsableAPIRenderer, JSONRenderer, XLSXRenderer,)
+    renderer_classes = (BrowsableAPIRenderer, JSONRenderer, XLSXRenderer)
     filename = 'organizations.xlsx'
 
     def dispatch(self, *args, **kwargs):
