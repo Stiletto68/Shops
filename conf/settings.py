@@ -154,3 +154,22 @@ FILEBROWSER_SELECT_FORMATS = {
     'document': ['Document'],
     'media': ['Video', 'Audio'],
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 25
+# AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend', )
+
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+ADMIN_EMAIL = 'test@etrans.ru'
+
+RECIPIENTS_EMAIL = ''
+DEFAULT_FROM_EMAIL = ''

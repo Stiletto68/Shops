@@ -2,7 +2,7 @@ from rest_framework import serializers
 from shops.models import Shop
 
 
-class ShopsJSONSerializer(serializers.HyperlinkedModelSerializer):
+class ShopsJSONSerializer(serializers.ModelSerializer):
     name = serializers.CharField()
     description = serializers.CharField()
     address = serializers.CharField()
